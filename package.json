@@ -1,0 +1,19 @@
+{
+  "name": "lq",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "report:generate": "allure generate allure-results -o allure-report --clean",
+    "report:open": "allure open allure-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.26.0",
+    "allure-commandline": "^2.18.1",
+    "allure-playwright": "^2.0.0-beta.19",
+    "experimental-allure-playwright": "^0.0.3"
+  }
+}
