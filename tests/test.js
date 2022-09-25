@@ -6,7 +6,7 @@ test('Authorization on site using valid cred', async ({ page }) => {
     const loginUser = new LoginPage(page);
     await loginUser.goto();
     await loginUser.getStarted();
-    // await page.screenshot({ path: 'img/screenshot1.jpeg' });
+    await page.screenshot({ path: 'img/screenshot1.jpeg' });
     // await page.locator("//a[contains(text(),'testLQ')]").screenshot({ path: 'img/screenshot2.jpeg' });
     // await page.locator('.my-page').screenshot({ path: 'img/screenshot02.jpeg' });
 });
