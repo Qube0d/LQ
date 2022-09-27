@@ -3,12 +3,12 @@
 
 Test cases for site https://www.redmine.org/
 
-<b>Required software :
+<b>Required software :</b>
 
 <p>* Download and install Node.js version 14 or above(<a href="https://nodejs.org/en/download/">download</a>). Playwright requires Node.js 14 or higher.</p>
 <p>* Download and install Visual Studio Code(<a href="https://code.visualstudio.com/download">download</a>).</p>
 
-Required steps to install:
+<b>Required steps to install:</b>
 
 <p>* Open Visual Studio Code.</p>
 <p>* Open terminal and run the install command.</p>
@@ -16,12 +16,12 @@ Required steps to install:
 <p>* npm i -D experimental-allure-playwright</p>
 <p>* npm i -D allure-commandline</p>
 
-Running test:
+<b>Running test:</b>
 
 <p>* npm run test</p>
 <p>* npm run test:headed (Running tests in headed mode)</p>
 
-Test reports:
+<b>Test reports:
 
 <p>* npm run report:generate (to generate allure report)</p>
 <p>* npm run report:open  (open allure report)</p>
