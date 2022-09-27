@@ -13,11 +13,15 @@ Required steps to install:
 <p>* Open Visual Studio Code.</p>
 <p>* Open terminal and run the install command.</p>
 <p>* npm init playwright@latest</p>
+<p>* npm i -D experimental-allure-playwright</p>
+<p>* npm i -D allure-commandline</p>
 
 Running test:
 
-<p>* npx playwright test</p>
+<p>* npm run test</p>
+<p>* npm run test:headed (Running tests in headed mode)</p>
 
 Test reports:
 
-<p>* ///</p>
+<p>* npm run report:generate (to generate allure report)</p>
+<p>* npm run report:open  (open allure report)</p>
