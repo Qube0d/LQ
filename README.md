@@ -3,7 +3,7 @@
 
 Test cases for site https://www.redmine.org/
 
-Required software :
+<b>Required software :
 
 <p>* Download and install Node.js version 14 or above(<a href="https://nodejs.org/en/download/">download</a>). Playwright requires Node.js 14 or higher.</p>
 <p>* Download and install Visual Studio Code(<a href="https://code.visualstudio.com/download">download</a>).</p>
