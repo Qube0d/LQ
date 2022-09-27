@@ -1,7 +1,7 @@
-Test cases for site https://www.redmine.org/
-
 <h1 align="center">Test cases</h1>
 <h3 align="center">Few steps how to run tests</h3>
+
+Test cases for site https://www.redmine.org/
 
 Required software :
 
