@@ -56,19 +56,18 @@ const config = {
         ...devices['Desktop Chrome'],
       },
     },
-
     // {
     //   name: 'firefox',
     //   use: {
     //     ...devices['Desktop Firefox'],
     //   },
     // },
-    // {
-    //   name: 'opera',
-    //   use: {
-    //     ...devices['Desktop Opera'],
-    //   },
-    // },
+    {
+      name: 'opera',
+      use: {
+        ...devices['Desktop Opera'],
+      },
+    },
     // {
     //   name: 'webkit',
     //   use: {
@@ -97,12 +96,12 @@ const config = {
     //     channel: 'msedge',
     //   },
     // },
-  //   {
-  //     name: 'Google Chrome',
-  //     use: {
-  //       channel: 'chrome',
-  //     },
-  //   },
+    {
+      name: 'Google Chrome',
+      use: {
+        channel: 'chrome',
+      },
+    },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */

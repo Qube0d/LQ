@@ -21,7 +21,7 @@ Test cases for site https://www.redmine.org/
 <p>* npm run test</p>
 <p>* npm run test:headed (Running tests in headed mode)</p>
 
-<b>Test reports:
+<b>Test reports:</b>
 
 <p>* npm run report:generate (to generate allure report)</p>
 <p>* npm run report:open  (open allure report)</p>
