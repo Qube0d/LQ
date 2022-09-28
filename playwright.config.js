@@ -50,58 +50,58 @@ const config = {
 
   /* Configure projects for major browsers */
   projects: [
-    {
-      name: 'chromium',
-      use: {
-        ...devices['Desktop Chrome'],
-      },
-    },
     // {
-    //   name: 'firefox',
+    //   name: 'chromium',
     //   use: {
-    //     ...devices['Desktop Firefox'],
+    //     ...devices['Desktop Chrome'],
     //   },
     // },
     {
-      name: 'opera',
+      name: 'firefox',
       use: {
-        ...devices['Desktop Opera'],
+        ...devices['Desktop Firefox'],
       },
     },
     // {
-    //   name: 'webkit',
+    //   name: 'opera',
     //   use: {
-    //     ...devices['Desktop Safari'],
+    //     ...devices['Desktop Opera'],
     //   },
     // },
+    // // {
+    // //   name: 'webkit',
+    // //   use: {
+    // //     ...devices['Desktop Safari'],
+    // //   },
+    // // },
 
-    /* Test against mobile viewports. */
-    // {
-    //   name: 'Mobile Chrome',
-    //   use: {
-    //     ...devices['Pixel 5'],
-    //   },
-    // },
-    // {
-    //   name: 'Mobile Safari',
-    //   use: {
-    //     ...devices['iPhone 12'],
-    //   },
-    // },
+    // /* Test against mobile viewports. */
+    // // {
+    // //   name: 'Mobile Chrome',
+    // //   use: {
+    // //     ...devices['Pixel 5'],
+    // //   },
+    // // },
+    // // {
+    // //   name: 'Mobile Safari',
+    // //   use: {
+    // //     ...devices['iPhone 12'],
+    // //   },
+    // // },
 
-    /* Test against branded browsers. */
+    // /* Test against branded browsers. */
+    // // {
+    // //   name: 'Microsoft Edge',
+    // //   use: {
+    // //     channel: 'msedge',
+    // //   },
+    // // },
     // {
-    //   name: 'Microsoft Edge',
+    //   name: 'Google Chrome',
     //   use: {
-    //     channel: 'msedge',
+    //     channel: 'chrome',
     //   },
     // },
-    {
-      name: 'Google Chrome',
-      use: {
-        channel: 'chrome',
-      },
-    },
   ],
 
   /* Folder for test artifacts such as screenshots, videos, traces, etc. */

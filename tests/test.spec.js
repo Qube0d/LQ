@@ -6,7 +6,7 @@ const {SearchPage} = require('../spec/search.page')
 test('Authorization on site using valid cred', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto('');
-    await loginPage.login('testLQ', 'testLQ');
+    await loginPage.login({login: 'testLQ',pwd: 'testLQ'});
     await expect(loginPage.activeUser).toContainText('testLQ');
     await expect(loginPage.myAccount).toBeVisible();
     // await page.screenshot({ path: 'img/screenshot1.jpeg' });
@@ -14,10 +14,11 @@ test('Authorization on site using valid cred', async ({ page }) => {
     // await page.locator('a.user.active').screenshot({ path: 'img/screenshot3.jpeg' });
 });
 
-test('Check login without entering pass', async ({ page }) => {
+test.only('Check login without entering pass', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto('');
-    await loginPage.loginFieldChecked();
+    await loginPage.login({login: 'testLQ'});
+    //await loginPage.loginFieldChecked();
     await expect(loginPage.errorMsg).toBeVisible();
     // await page.screenshot({ path: 'img/screenshot4.jpeg' });
     // await page.locator('#flash_error').screenshot({ path: 'img/screenshot5.jpeg' });
@@ -26,7 +27,7 @@ test('Check login without entering pass', async ({ page }) => {
 test('Check login without entering any cred', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto('');
-    await loginPage.emptyFieldsLogPwd();
+    await loginPage.login({});
     await expect(loginPage.errorMsg).toBeVisible();
     // await page.screenshot({ path: 'img/screenshot6.jpeg' });
     // await page.locator('#flash_error').screenshot({ path: 'img/screenshot7.jpeg' });
@@ -36,6 +37,11 @@ test('Checking filter headers', async ({ page }) => {
     const searchPage = new SearchPage(page);
     await searchPage.goto('');
     await searchPage.chkHeadedFltr();
+    await expect(searchPage.dropDwnMenu).toBeVisible();
+    await expect(searchPage.dropDwnMenu).toBeVisible();
+    await expect(searchPage.dropDwnMenu).toBeVisible();
+    await expect(searchPage.dropDwnMenu).toBeVisible();
+    await expect(searchPage.dropDwnMenu).toBeVisible();
     await expect(searchPage.dropDwnMenu).toBeVisible();
     // await page.screenshot({ path: 'img/screenshot8.jpeg' });
     // await page.locator('.small').screenshot({ path: 'img/screenshot9.jpeg' });

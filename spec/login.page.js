@@ -19,8 +19,8 @@ exports.LoginPage = class LoginPage {
   async goto(path) {
     await this.page.goto(`/${path}`);
   }
-  
-  async login(login, pwd) {
+
+  async login({ login, pwd }) {
     await this.loginBtn.click();
     if (login) {
       await this.loginField.fill(login);
@@ -28,34 +28,23 @@ exports.LoginPage = class LoginPage {
     if (pwd) {
       await this.pwdField.fill(pwd);
     }
-    // if (login = undefined) {
-    //    alert ("Name must be filled out");
-    // }
-    // if (pwd = undefined) {
-    //    alert ("Name must be filled out");
-    // }
-      await this.sbmLogBtn.click();
+    await this.sbmLogBtn.click();
   }
 
-  async loginFieldChecked() {
-    await this.loginBtn.click();
-    await this.loginField.fill('testLQ');
-    await this.sbmLogBtn.click();
-    await this.errorMsg.isVisible();
-  }
+  // async loginFieldChecked() {
+  //   await this.loginBtn.click();
+  //   await this.loginField.fill('testLQ');
+  //   await this.sbmLogBtn.click();
+  //   await this.errorMsg.isVisible();
+  // }
   
-  async emptyFieldsLogPwd() {
-    await this.loginBtn.click();
-    await this.loginField.focus();
-    await this.pwdField.focus();
-    await this.sbmLogBtn.click();
-    await this.errorMsg.isVisible();
-  } 
-  async pageObjectModel() {
-    await this.login();
-    await this.loginFieldChecked();
-    await this.emptyFieldsLogPwd();
-  }
+  // async emptyFieldsLogPwd() {
+  //   await this.loginBtn.click();
+  //   await this.loginField.focus();
+  //   await this.pwdField.focus();
+  //   await this.sbmLogBtn.click();
+  //   await this.errorMsg.isVisible();
+  // } 
 }
 
 

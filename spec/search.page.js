@@ -1,5 +1,6 @@
 const { expect } = require('@playwright/test');
 
+
 exports.SearchPage = class SearchPage {
     constructor(page) {
         this.page = page;
@@ -22,12 +23,12 @@ exports.SearchPage = class SearchPage {
     async chkHeadedFltr() {
         await this.searchField.click();
         await this.searchField.press('Enter');
-        await this.tasksBtn.isVisible();
-        await this.newsBtn.isVisible();
-        await this.changesBtn.isVisible();
-        await this.pageWikiBtn.isVisible();
-        await this.messageBtn.isVisible();
-        await this.redPlugBtn.isVisible();
+        // await this.tasksBtn.isVisible();
+        // await this.newsBtn.isVisible();
+        // await this.changesBtn.isVisible();
+        // await this.pageWikiBtn.isVisible();
+        // await this.messageBtn.isVisible();
+        // await this.redPlugBtn.isVisible();
     }
     
     async searchPageFilters() {
