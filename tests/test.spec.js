@@ -14,7 +14,7 @@ test('Authorization on site using valid cred', async ({ page }) => {
     // await page.locator('a.user.active').screenshot({ path: 'img/screenshot3.jpeg' });
 });
 
-test.only('Check login without entering pass', async ({ page }) => {
+test('Check login without entering pass', async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto('');
     await loginPage.login({login: 'testLQ'});
