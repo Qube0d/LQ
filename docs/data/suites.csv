@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Wed Sep 28 12:35:45 UTC 2022","Wed Sep 28 12:35:54 UTC 2022","8882","firefox","","","","","Authorization on site using valid cred",""
+"passed","Wed Sep 28 12:36:22 UTC 2022","Wed Sep 28 12:36:32 UTC 2022","10068","firefox","","","","","Check sorting by filter names",""
+"passed","Wed Sep 28 12:35:54 UTC 2022","Wed Sep 28 12:35:57 UTC 2022","3550","firefox","","","","","Check login without entering pass",""
+"passed","Wed Sep 28 12:36:01 UTC 2022","Wed Sep 28 12:36:04 UTC 2022","3194","firefox","","","","","Checking filter headers",""
+"passed","Wed Sep 28 12:35:57 UTC 2022","Wed Sep 28 12:36:01 UTC 2022","3267","firefox","","","","","Check login without entering any cred",""
